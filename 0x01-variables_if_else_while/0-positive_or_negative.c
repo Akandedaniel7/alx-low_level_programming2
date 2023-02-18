@@ -1,27 +1,42 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+/* more headers goes there */
 
 /**
- * main - Description if a number is positive, negative or zero.
+ * main - Entry point for program
  *
- * Return: Always 0 (Success)
+ * Description: The program reads the value for n and
+ * checks if it is positive, negative or zero
+ *
+ * int n -  Declares an integer variable
+ *
+ * if/else - Sets conditions for program
+ *
+ * Return: Always 0 (success)
  */
+
+/* betty style doc for function main goes there */
+
 int main(void)
 {
 	int n;
 
-	scrand(time(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
-	else is (n == 0)
+	else if (n == 0)
 	{
-		printf("%d is zero\n". n);
+		printf("%d is zero\n", n);
 	}
-	else{
+	else
+	{
 		printf("%d is negative\n", n);
-	}
+	};
+
 	return (0);
+}
