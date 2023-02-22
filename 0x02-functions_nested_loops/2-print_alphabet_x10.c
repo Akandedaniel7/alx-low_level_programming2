@@ -1,25 +1,26 @@
 #include "main.h"
 
 /**
- * print_alphabelt_x10 - prints alphabelt 10 time
- * Return: void
+ * print_alphabet_x10 - prints alphabets 10
+ *
+ * Description: prints 10 times
+ * Return: Always(0).
  */
 
-void print_alphabelt_x10(void)
+void print_alphabet_x10(void)
 {
-	char c;
-	int i = 0;
+	int alphabet_count = 0;
 
-	while (i < 10)
+	while (alphabet_count < 10)
 	{
-		c = 'a';
+		char ch = 'a';
 
-		while (c <= 'z')
+		while (ch <= 'z')
 		{
-			_putchar(c);
-			c++
+			_putchar(ch);
+			ch++;
 		}
+		alphabet_count++;
 		_putchar('\n');
-		i++
 	}
 }
