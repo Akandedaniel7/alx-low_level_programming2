@@ -1,18 +1,18 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-	{
-	char c;
+* _isdigit(int c)- main entry point
+* @c: parameter of the function
+* Return: returns an integer
+*/
 
-	c = '0';
-	printf("%c: %d\n", c, _isdigit(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isdigit(c));
-	return (0);
+int _isdigit(int c)
+{
+	if (isdigit(c))
+	{
+		return (1);
 	}
+	else
+	{
+		return (0);
+	}
+}
